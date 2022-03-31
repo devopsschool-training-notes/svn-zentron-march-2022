@@ -1,0 +1,51 @@
+SVN
+
+Where it Stands in SDLC Cycle?
+===================================
+PLAN 		- JIRA
+CODE		- SVN - GIT
+ANALYSE		- SonarQube
+BUILD		- Maven Ant
+UT		- JUnut
+PACK		- .vi
+ARCHIVE		- SVN - Nexus - Artifactry
+DEP2QA		- Ansible - Chef - 
+AT		- NI TEST STAND - 
+CC		- Jacoco
+			If all are passed - RELEASE
+			IF ONE IS Failed - REPEAT
+Ref
+https://devopsschool.com/path/
+
+What is SVN?
+WHy SVN?
+How SVN Works?
+
+SVN Basic Workflow?
+=======================
+Step 1 - Create a repo at SVN server.
+https://zentron-labs.svn.beanstalkapp.com/zensvntraining/
+
+Step 2 - Install SVN client
+		- TortoiseSVN
+
+Step 3 - Checkout a Repo
+svn co url 
+
+Step 4 - Write a Code OR Design some Graphics -> VI
+
+Step 5 - SVN Add
+
+Step 6 - SVN Commit
+
+Step 7 - SVN Log
+
+
+
+
+
+
+
+
+
+
