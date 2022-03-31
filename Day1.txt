@@ -40,7 +40,133 @@ Step 6 - SVN Commit
 
 Step 7 - SVN Log
 
+https://github.com/devopsschool-training-notes/svn-zentron-march-2022/
 
+
+SVN Intermediate Workflow?
+=======================
+How to modify existing file?
+How to delete a files/dir?
+How to move a files/dirs from place to another?
+How to rename a file?
+
+svn rm file
+svn rm url 
+
+========================================================
+What is Branch?
+------------------
+LINE of
+	- DEV
+	- Bug Fixing
+	- Teams
+	- Diff Geor
+======================
+How to create a branch?
+How to create a tag?
+------------------------------
+COPY
+----------------------------
+WORKING COPY			REPOSTORY
+-----------------------------------------
+WC -  		WC
+day1\trunk	day1\branches\branch1
+
+WC -  		URL
+day1\trunk	beanstalkapp.com/zensvntraining/branches/branch1
+
+URL 		URL 
+
+FROM - https://zentron-labs.svn.beanstalkapp.com/zensvntraining/trunk/
+TO - https://zentron-labs.svn.beanstalkapp.com/zensvntraining/branches/branch1
+
+URL 		WC
+
+===========================================================
+
+
+Step 1 - Create a branch from Trunk/rajesh1222/ to branches/rajesh1222/
+
+Step 2 - Switch branches/rajesh1222/
+COMMIT SAME FILE
+
+Step 4 - Switch Trunk/rajesh1222/
+COMMIT SAME FILE
+
+Step 5 - Switch Trunk/rajesh1222/
+svn merge
+
+==================================================
+$ svn co url
+$ svn add filename/dirname
+$ svn commit -m"This is my first commit"
+$ svn log
+$ svn update
+$ svn move dir1/url dir2/url
+$ svn delete rm dir/file/url
+$ svn copy trunk/dir branches/dir
+$ svn switch branches/dir
+$ svn merge trunk/dir branches/dir
+$ svn resolve --accept mine-full filename
+$ svn mkdir branches/dir1
+$ svn info
+$ svn cat
+$ svn lock filename
+$ svn unlock filename
+$ svn status
+
+branches/dir1/dir2
+
+branches/dir1 - NOT EXIST
+
+
+  add
+   auth
+   blame (praise, annotate, ann)
+   cat
+   changelist (cl)
+   checkout (co)
+   cleanup
+   commit (ci)
+   copy (cp)
+   delete (del, remove, rm)
+   diff (di)
+   export
+   help (?, h)
+   import
+   info
+   list (ls)
+   lock
+   log
+   merge
+   mergeinfo
+   mkdir
+   move (mv, rename, ren)
+   patch
+   propdel (pdel, pd)
+   propedit (pedit, pe)
+   propget (pget, pg)
+   proplist (plist, pl)
+   propset (pset, ps)
+   relocate
+   resolve
+   resolved
+   revert
+   status (stat, st)
+   switch (sw)
+   unlock
+   update (up)
+   upgrade
+
+
+
+
+
+c:\raju\zensvntraining>svn switch https://zentron-labs.svn.beanstalkapp.com/zensvntraining/branches/ARajesh%20branch1/
+svn: E195012: Path '.' does not share common version control ancestry with the requested switch location.  Use --ignore-ancestry to disable this check.
+svn: E195012: 'https://zentron-labs.svn.beanstalkapp.com/zensvntraining/branches/ARajesh%20branch1' shares no common ancestry with 'C:\raju\zensvntraining'
+
+c:\raju\zensvntraining>
 
 
 
